@@ -21,7 +21,7 @@ MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/
 
 ## Usage
 
-### Extract AUs by OpenFace toolkit
+### Extract AUs by the OpenFace toolkit
 ```shell script
 python3 get_aus.py --persons_path PATH_TO_YOUR_VIDEOS
 ```
