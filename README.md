@@ -27,15 +27,15 @@ python3 get_aus.py --persons_path PATH_TO_YOUR_VIDEOS
 ```
 ### Simulate MiEs 
 
-use $AU_{MiE}$ to simulate
+use AU<sub>MiE</sub> to simulate
 ```shell script
 CUDA_VISIBLE_DEVICES=0 python3 simulate_realAU.py 
 ```
-use AU<sub>MiE</sub> to simulate
+use AU<sub>MaE</sub> to simulate
 ```shell script
 CUDA_VISIBLE_DEVICES=0 python3 simulate_ck.py 
 ```
-use $AU_{exp}$ to simulate
+use AU<sub>exp</sub> to simulate
 ```shell script
 CUDA_VISIBLE_DEVICES=0 python3 simulate_data.py 
 ```
