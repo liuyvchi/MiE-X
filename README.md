@@ -15,11 +15,11 @@ python3 get_aus.py --persons_path PATH_TO_YOUR_VIDEOS
 
 use $AU_{MiE}$ to simulate
 ```shell script
-CUDA_VISIBLE_DEVICES=0 python3 simulate_realAU.py -d 
+CUDA_VISIBLE_DEVICES=0 python3 simulate_realAU.py 
 ```
 use $AU_{MaE}$ to simulate
 ```shell script
-CUDA_VISIBLE_DEVICES=0 python3 simulate_ck.py -d 
+CUDA_VISIBLE_DEVICES=0 python3 simulate_ck.py 
 ```
 use $AU_{exp}$ to simulate
 ```shell script
