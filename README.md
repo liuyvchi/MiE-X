@@ -19,6 +19,13 @@ MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/
 - face_recognition
 - opencv-contrib-python
 
+## Dependencies
+We make generated images from VehicleX directly. We have performed domain adaptation (both content level and style level) from VehicleX to VeRi-776, VehicleID and CityFlow respectively. They can be used to augment real-world data. The adaptated images can be downloaded the tabel below. 
+
+|    Variant      | MiE-X (MEGC)        | MiE-X (MMEW)        | MiE-X (Oulu)  |
+|--------------|------------------|------------------|-----------|
+| Access     | [Baidu](https://pan.baidu.com/s/)(pwd:nz36),[Google](https://drive.google.com/file/d/) | [Baidu](https://pan.baidu.com/s/1U16Z3GmTzEs-H_TrV24qlA)(pwd:akjh),[Google](https://drive.google.com/file/d/) | [Website](https://www.) |
+
 ## Usage
 
 ### Extract AUs by the OpenFace toolkit
