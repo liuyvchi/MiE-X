@@ -28,11 +28,19 @@ We make generated images from VehicleX directly. We have performed domain adapta
 
 ## Usage
 
+go to GANimation-master
+
+```shell script
+cd GANimation-master
+```
+
+
 ### Extract AUs by the OpenFace toolkit
 ```shell script
 python3 get_aus.py --persons_path PATH_TO_YOUR_VIDEOS
 ```
-### Simulate MiEs 
+### Simulate MiEs
+
 
 use AU<sub>MiE</sub> to simulate
 ```shell script
@@ -47,3 +55,14 @@ use AU<sub>exp</sub> to simulate
 CUDA_VISIBLE_DEVICES=0 python3 simulate_data.py 
 ```
 
+## Train MiE classifers
+
+go to MER
+
+```shell script
+cd MER
+```
+### Train on MiE-X and fine-tune on real-world data
+```shell script
+bash train_fold_simu_fineT.py
+```
