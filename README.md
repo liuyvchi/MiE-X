@@ -8,7 +8,7 @@ This is an implementation of MiE-X by Pytorch. MiE-X is a large-scale synthetic 
 Overview of computing three types of Action Units.
 ![system overview](system.png "System overview of XX.") -->
 
-## Datasets
+## Dependencies
 MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/GANimation)
 - python 3.7+
 - pytorch 1.6+ & torchvision
@@ -19,7 +19,7 @@ MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/
 - face_recognition
 - opencv-contrib-python
 
-## Dependencies
+## Datasets
 We make generated images from VehicleX directly. We have performed domain adaptation (both content level and style level) from VehicleX to VeRi-776, VehicleID and CityFlow respectively. They can be used to augment real-world data. The adaptated images can be downloaded the tabel below. 
 
 |    Variant      | MiE-X (MEGC)        | MiE-X (MMEW)        | MiE-X (Oulu)  |
