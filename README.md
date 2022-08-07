@@ -64,5 +64,5 @@ cd MER
 ```
 ### Train on MiE-X and fine-tune on real-world data
 ```shell script
-bash train_fold_simu_fineT.py
+bash run_train_fold_fineT.sh
 ```
