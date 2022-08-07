@@ -8,7 +8,7 @@ This is an implementation of MiE-X by Pytorch. MiE-X is a large-scale synthetic 
 Overview of computing three types of Action Units.
 ![system overview](system.png "System overview of XX.") -->
 
-## Dependencies
+## Datasets
 MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/GANimation)
 - python 3.7+
 - pytorch 1.6+ & torchvision
