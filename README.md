@@ -23,7 +23,7 @@ MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/
 
 |    Variant      | MiE-X (MEGC)        | MiE-X (MMEW)        | MiE-X (Oulu)  |
 |--------------|------------------|------------------|-----------|
-| Access     | [Baidu](https://pan.baidu.com/s/)(pwd:nz36),[Google](https://drive.google.com/file/d/) | [Baidu](https://pan.baidu.com/s/)(pwd:akjh),[Google](https://drive.google.com/file/d/) | [Google](https://www.) |
+| Access     | [Baidu](https://pan.baidu.com/s/),[Google](https://drive.google.com/file/d/) | [Baidu](https://pan.baidu.com/s/),[Google](https://drive.google.com/file/d/) | [Google](https://www.) |
 
 ## Usage
 
