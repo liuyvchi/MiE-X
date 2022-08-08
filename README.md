@@ -20,7 +20,6 @@ MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/
 - opencv-contrib-python
 
 ## Datasets
-We make generated images from VehicleX directly. We have performed domain adaptation (both content level and style level) from VehicleX to VeRi-776, VehicleID and CityFlow respectively. They can be used to augment real-world data. The adaptated images can be downloaded the tabel below. 
 
 |    Variant      | MiE-X (MEGC)        | MiE-X (MMEW)        | MiE-X (Oulu)  |
 |--------------|------------------|------------------|-----------|
