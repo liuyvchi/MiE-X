@@ -157,7 +157,7 @@ MMEW_AU_PATH = '../MER/Data/MMEW_out_static/'
 oulu_AU_PATH = '../MER/Data/oulu_AU_static/'
 
 # tar_dir = 'generated5k_mmewAU'
-tar_dir = 'generated5k_oulu+mmew_AU'
+tar_dir = 'output/generated5k_AUexp_V'
 
 target_sample_dir = None
 exp_tar_aus_0 = {'0':None, '1':None, '2': None}
@@ -190,7 +190,7 @@ for idx_global in range(5000):
         img = Image.open(img_path)
         img_tensor = tensor_transform(img)
         img_tensor = img_tensor.unsqueeze(dim=0)
-        img_tensor = torch.cat((img_tensor, img_tensor), dim=0)
+        img_tensor = img_tensor.expand(10, -1,-1,-1)
         shared_img_tensor = img_tensor
     else:
         img_tensor = shared_img_tensor
@@ -198,6 +198,7 @@ for idx_global in range(5000):
 
 
     tiems_shareAU = 1
+    exp_tar_aus = {'0': [], '1': [], '2': []}
     for emotion_label in range(3):
         if idx%tiems_shareAU == 0:
             sample_au = True
@@ -211,7 +212,7 @@ for idx_global in range(5000):
             for i in range(10):
                 exp_au = torch.tensor(AU_MiEexpV_pool[str(emotion_label)][idx][i]).unsqueeze(dim=0)
                 exp_tar_aus[str(emotion_label)].append(exp_au)
-
+            exp_tar_aus[str(emotion_label)] = torch.cat(exp_tar_aus[str(emotion_label)], dim=0)
             # exp_tar_aus_0[str(emotion_label)] = torch.tensor(AU_MiEexp_pool[str(emotion_label)][idx][0]).unsqueeze(dim=0)
             # exp_tar_aus_1[str(emotion_label)] = torch.tensor(AU_MiEexp_pool[str(emotion_label)][idx][1]).unsqueeze(dim=0)
             # exp_tar_aus[str(emotion_label)] = torch.cat((exp_tar_aus_0[str(emotion_label)], exp_tar_aus_1[str(emotion_label)]), dim=0)
@@ -222,7 +223,7 @@ for idx_global in range(5000):
         cur_gen_faces = test_model.fake_img.detach().cpu().float().numpy() # to be simple, only generate one face each time
         ## save sample in the folder ##
         print(target_sample_dir)
-        assert (0)
+        # assert (0)
         saved_path_dir = os.path.join(tar_dir, "%s_%s_%s" % (target_sample_dir, 'exp', str(emotion_label)))
         if not os.path.exists(saved_path_dir):
             os.makedirs(saved_path_dir)
