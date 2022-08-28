@@ -27,31 +27,47 @@ MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/
 
 ## Usage
 
-go to GANimation-master
+go to ganimation_replicate
 
 ```shell script
-cd GANimation-master
+cd ganimation_replicate
 ```
 
 
 ### Extract AUs by the OpenFace toolkit
+This work use OpenFace to extract Action Units from real-world expressions. If you would like to extract
+AUs by yourself, please follow the official [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace)
+repo. We have extracted AUs from MEGC, MMEW, and Oulu and placed them in the `MER/Data` folder.
+
+### Prepare AUs pools for simulation
+
+E.g., prepare the AU pool for the AUs extracted from the MMEW dataset.
+
 ```shell script
-python3 get_aus.py --persons_path PATH_TO_YOUR_VIDEOS
+python prepare_AUMMEW_pool.py
 ```
+
+
 ### Simulate MiEs
 
+Simulate image based micro-expressions: 
 
-use AU<sub>MiE</sub> to simulate
+<!--- use AU<sub>MiE</sub> to simulate --->
 ```shell script
-CUDA_VISIBLE_DEVICES=0 python3 simulate_realAU.py 
+python simulate.py --mode test --data_root datasets/celebA --gpu_ids 2,3 --ckpt_dir ckpts/emotionNet/ganimation/190327_160828/ --load_epoch 30
 ```
-use AU<sub>MaE</sub> to simulate
+
+Preliminary: You need to download your face source dataset and place its path after `--data_root`. The pretrained
+GANimation model should be placed in `--ckpt_ddir`. You can train your own GANimation model by following the 
+[official](https://github.com/albertpumarola/GANimation) GANimation repo or directly downloading the pretrained model from the 
+[third-party](https://github.com/donydchen/ganimation_replicate) implementation. 
+
+Simulate video based micro-expressions: 
+
+<!--- use AU<sub>MaE</sub> to simulate --->
+
 ```shell script
-CUDA_VISIBLE_DEVICES=0 python3 simulate_ck.py 
-```
-use AU<sub>exp</sub> to simulate
-```shell script
-CUDA_VISIBLE_DEVICES=0 python3 simulate_data.py 
+python simulate_video_AUexp.py --mode test --data_root datasets/celebA --gpu_ids 2,3 --ckpt_dir ckpts/emotionNet/ganimation/190327_160828/ --load_epoch 30
 ```
 
 ## Train MiE classifers
