@@ -23,9 +23,9 @@ MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/
 
 Baidunetdisk is available. Google drive is coming soon.
 
-|    Variant      | MiE-X ($AU_{mie}$)        | MiE-X (AU_mae)  |  MiE-X (AU_exp)        |
+|    Variant      | MiE-X (AU_mie)        | MiE-X (AU_mae)  |  MiE-X (AU_exp)        |
 |--------------|------------------|------------------|-----------|
-| Access     | [Baidu](https://pan.baidu.com/s/1vcOrXyPks-T8PY_UJimGKw?pwd=42i8),[Google](https://drive.google.com/file/d/) | [Baidu](https://pan.baidu.com/s/1kfAz5W2MP1jiVIzfAU9x9g?pwd=81vm),[Google](https://drive.google.com/file/d/) | [Baidu](https://www.) |
+| Access     | [Baidu](https://pan.baidu.com/s/1vcOrXyPks-T8PY_UJimGKw?pwd=42i8),[Google](https://drive.google.com/file/d/) | [Baidu](https://pan.baidu.com/s/1kfAz5W2MP1jiVIzfAU9x9g?pwd=81vm),[Google](https://drive.google.com/file/d/) | [Baidu](https://pan.baidu.com/s/1BYnLANq-mYvlqDcg_yQiEg?pwd=v1p7 ) |
 
 ## Usage
 
