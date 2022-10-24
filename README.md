@@ -88,8 +88,7 @@ If you find this code useful, please kindly cite:
 
 ```
 @inproceedings{liu2021synthesize,
-  title={How to Synthesize a Large-Scale and Trainable
-Micro-Expression Dataset?},
+  title={How to Synthesize a Large-Scale and Trainable Micro-Expression Dataset?},
   author={Liu, Yuchi and Wang, Zhongdao and Gedeon, Tom and Zheng, Liang},
   booktitle={ECCV},
   year={2022}
