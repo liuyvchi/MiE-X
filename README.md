@@ -22,9 +22,9 @@ MiE-X uses the same libraries as [GANimation](https://github.com/albertpumarola/
 ## Datasets
 (coming soon)
 
-|    Variant      | MiE-X (MEGC)        | MiE-X (MMEW)        | MiE-X (Oulu)  |
+|    Variant      | MiE-X (AU_mie)        | MiE-X (AU_mae)  |  MiE-X (AU_exp)        |
 |--------------|------------------|------------------|-----------|
-| Access     | [Baidu](https://pan.baidu.com/s/),[Google](https://drive.google.com/file/d/) | [Baidu](https://pan.baidu.com/s/),[Google](https://drive.google.com/file/d/) | [Google](https://www.) |
+| Access     | [Baidu](https://pan.baidu.com/s/1vcOrXyPks-T8PY_UJimGKw?pwd=42i8),[Google](https://drive.google.com/file/d/) | [Baidu](https://pan.baidu.com/s/1kfAz5W2MP1jiVIzfAU9x9g?pwd=81vm),[Google](https://drive.google.com/file/d/) | [Baidu](https://www.) |
 
 ## Usage
 
