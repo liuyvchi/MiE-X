@@ -6,6 +6,8 @@ This is an implementation of MiE-X by Pytorch. MiE-X is a large-scale synthetic 
 
 ![](https://github.com/liuyvchi/MiE-X/blob/master/imgs/three_types_AUs.jpg)
 
+Related material: [Paper](https://arxiv.org/pdf/2112.01730.pdf), [Poster](https://github.com/liuyvchi/MiE-X/releases/download/eccv2022/ECCV2022_MiEX_poster.pdf), [5min Intro](https://github.com/liuyvchi/MiE-X/releases/download/eccv2022/presentation_ECCV2022.mp4).
+
 <!-- ## Overview
 Overview of computing three types of Action Units.
 ![system overview](system.png "System overview of XX.") -->
